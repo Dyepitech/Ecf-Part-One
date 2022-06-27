@@ -2,6 +2,18 @@
     width: 30px;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.valid-comand {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    color: green;
+    font-size: 25px;
+}
+
 .police {
     font-family: 'Inter', sans-serif;
 }
@@ -105,9 +117,13 @@
     }
 
     .dot-pattern {
-        top: 93.5%;
+        top: 114%;
     }
-    
+
+    .dot-pattern2 {
+        top: 114%;
+    }
+
     .head-space {
         display: block !important;
     }
@@ -131,8 +147,21 @@
         flex-direction: column-reverse;
     }
 
-    .round-im2 {
-        width: 65%;
+    .round-img2 {
+        width: 60%;
+        margin-left: 3rem;
+    }
+    .rcol-margin {
+        margin-left: 3rem;
     }
     
+    .left-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
 }
