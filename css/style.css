@@ -26,6 +26,13 @@
     background-color: #6415ff !important;
 }
 
+.toto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .text-color {
     color: #243e63;
 }
@@ -51,11 +58,16 @@
     color: white;
 }
 
+.dot {
+    display: flex;
+    align-self: flex-end;
+}
+
 .dot-pattern {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 55%;
+    top: 55.4%;
     left: 80.5%;
     z-index: -1;
     filter: invert(75%) sepia(26%) saturate(382%) hue-rotate(216deg) brightness(102%) contrast(94%);
@@ -67,9 +79,10 @@
     z-index: -1;
     filter: invert(75%) sepia(26%) saturate(382%) hue-rotate(216deg) brightness(102%) contrast(94%);
     position: absolute;
-    right: 67%;
-    top: 111%;
+    bottom: -264px;
+    left: 565px;
 }
+
 
 .nav-item > a:hover {
 
@@ -105,6 +118,19 @@
     z-index: 1;
 }
 
+.dot-pat {
+    width: 12%;
+    height: 12%;
+    position: absolute;
+    bottom: -239px;
+    left: 472px;
+    z-index: -1;
+}
+
+.left-col {
+    margin-left: 30px;
+}
+
 @media screen and (max-width: 991px) {
     .menu {
         flex-direction: column;
@@ -117,10 +143,6 @@
     }
 
     .dot-pattern {
-        top: 114%;
-    }
-
-    .dot-pattern2 {
         top: 114%;
     }
 
@@ -149,7 +171,6 @@
 
     .round-img2 {
         width: 60%;
-        margin-left: 3rem;
     }
     .rcol-margin {
         margin-left: 3rem;
@@ -162,6 +183,42 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 970px) {
+    .dot-pattern2 {
+        bottom: -750px;
+        left: 374px;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .dot-pattern {
+        top: 102%;
+        left: 75%;
+    }
+    .dot-pattern2 {
+        top: 152.6%;
+        left: 43%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .dot-pattern {
+        left: 76%;
+        top: 98%;
+    }
+    .dot-pattern2 {
+        left: 76%;
+        top: 98%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dot-pattern {
+        display: none;
+    }
+    .dot-pattern2 {
+        display: none;
+    }
+}
+
