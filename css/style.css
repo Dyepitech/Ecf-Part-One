@@ -1,0 +1,138 @@
+.logo {
+    width: 30px;
+}
+
+.police {
+    font-family: 'Inter', sans-serif;
+}
+
+.purple {
+    color: #6415ff !important;
+}
+
+.bg-purple {
+    background-color: #6415ff !important;
+}
+
+.text-color {
+    color: #243e63;
+}
+
+.head-space {
+    margin-top: 8rem!important;
+}
+
+.play-img {
+    width: 39px;
+}
+
+.round-img {
+    border-radius: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.subtitle {
+    width: 56%;
+    text-align: center;
+    transform: skewX(-14deg);
+    color: white;
+}
+
+.dot-pattern {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 55%;
+    left: 80.5%;
+    z-index: -1;
+    filter: invert(75%) sepia(26%) saturate(382%) hue-rotate(216deg) brightness(102%) contrast(94%);
+}
+
+.dot-pattern2 {
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    filter: invert(75%) sepia(26%) saturate(382%) hue-rotate(216deg) brightness(102%) contrast(94%);
+    position: absolute;
+    right: 67%;
+    top: 111%;
+}
+
+.nav-item > a:hover {
+
+    text-decoration-line: underline;
+    color: #6415ff !important;
+}
+
+.meet > a {
+    text-decoration: none !important;
+}
+
+.meet > a:hover > img{
+    text-decoration: none !important;
+    filter: invert(16%) sepia(94%) saturate(5164%) hue-rotate(260deg) brightness(94%) contrast(117%);
+}
+
+.meet > a:hover > span{
+    text-decoration: none !important;
+    color: #6415ff !important;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.register {
+    background-color: #6415ff;
+}
+
+.round-img2 {
+    border-radius: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .menu {
+        flex-direction: column;
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+    .text-adjust {
+        width: 168px;
+    }
+
+    .dot-pattern {
+        top: 93.5%;
+    }
+    
+    .head-space {
+        display: block !important;
+    }
+
+    .round-img {
+        max-width: 100%;
+    }
+    .mobile-flex {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .center {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .btn {
+        margin-right: 30px;
+    }
+
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .round-im2 {
+        width: 65%;
+    }
+    
+}
