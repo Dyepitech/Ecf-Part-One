@@ -19,3 +19,30 @@ function Increment() {
     let nb = document.getElementById("number");
     nb.textContent = parseInt(initial+1) + ' '
 }
+
+function Randomise() {
+    let nb1 = Math.floor(Math.random() * 99999) + 1;
+    let nb2 = Math.floor(Math.random() * 99999) + 1;
+    let nb3 = Math.floor(Math.random() * 99999) + 1;
+    let value1 = document.getElementById("number2");
+    let value2 = document.getElementById("number3");
+    let value3 = document.getElementById("number4");
+    value1.textContent = nb1 + '+'
+    value2.textContent = nb2 + '+'
+    value3.textContent = nb3 + '+'
+}
+
+function Newsletter() {
+    let input = document.getElementById("inputmail");
+    let msg = document.getElementById("validate");
+    let button = document.getElementById("button-reg");
+    if (!input.value)
+        return
+    else {
+        msg.classList.remove("hidden");
+        msg.classList.add("valid-comand");
+        input.classList.add("hidden");
+        button.classList.add("hidden");
+        msg.textContent = "Merci " + input.value;
+    }
+}
